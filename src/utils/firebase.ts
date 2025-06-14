@@ -21,17 +21,17 @@ import { getDatabase } from "firebase/database";
 const firebaseConfig = {
   apiKey: "AIzaSyDzRicoX7u82xKEdKKlMWe0wCjfAUoPLJw",
   authDomain: "testproject-2e69a.firebaseapp.com",
-  databaseURL: "https://testproject-2e69a-default-rtdb.asia-southeast1.firebasedatabase.app",
+  databaseURL:
+    "https://testproject-2e69a-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "testproject-2e69a",
   storageBucket: "testproject-2e69a.firebasestorage.app",
   messagingSenderId: "598342802643",
   appId: "1:598342802643:web:cac81e0973d2c4e70b8826",
-  measurementId: "G-QYBW8LF0BV"
+  measurementId: "G-QYBW8LF0BV",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const database = getDatabase(app);
 
-export { database }
+export { database };
